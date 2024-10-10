@@ -93,11 +93,51 @@
                     </div>
                     <div class="col-md-12" style="margin-top: 10px;">
                         <label for="inputEmail4" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="inputEmail4" required>
+                        <div class="input-group mb-3" id="show_hide_password">
+                            <input type="password" class="form-control" placeholder="Password" id="password"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2" required>
+                            <span class="input-group-text" id="basic-addon2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    onclick="password_show_hide();" id="hide_eye" class="bi bi-eye-slash-fill d-none"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7 7 0 0 0 2.79-.588M5.21 3.088A7 7 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474z" />
+                                    <path
+                                        d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    id="show_eye" onclick="password_show_hide();" class="bi bi-eye-fill"
+                                    viewBox="0 0 16 16">
+                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                    <path
+                                        d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                </svg>
+                            </span>
+                        </div>
                     </div>
                     <div class="col-md-12" style="margin-top: 10px;">
                         <label for="inputEmail4" class="form-label">Confirm Password</label>
-                        <input type="password" class="form-control" id="inputEmail4" required>
+                        <div class="input-group mb-3" id="show_hide_password">
+                            <input type="password" class="form-control" placeholder="Password" id="password"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2" required>
+                            <span class="input-group-text" id="basic-addon2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    onclick="password_show_hide2();" id="hide_eye" class="bi bi-eye-slash-fill d-none"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7 7 0 0 0 2.79-.588M5.21 3.088A7 7 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474z" />
+                                    <path
+                                        d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    id="show_eye" onclick="password_show_hide();" class="bi bi-eye-fill"
+                                    viewBox="0 0 16 16">
+                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                    <path
+                                        d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                </svg>
+                            </span>
+                        </div>
                     </div>
                     <div class="col-md-12" style="margin-top: 10px;">
                         <label for="inputEmail4" class="form-label">Email</label>
@@ -114,30 +154,31 @@
                         </div>
                     </div>
                     <div class="col-12" style="margin-top: 20px;">
-                        <button type="submit" class="btn btn-primary"
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                             data-bs-target="#bookingModal">Submit</button>
                     </div>
-                </form>
-                <!-- Confirm Modal -->
-                <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="exampleModalToggleLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Register Account</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <p>Do you want to register new account?</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
-                                <button type="button" class="btn btn-success">Register</button>
+                    <!-- Confirm Modal -->
+                    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="exampleModalToggleLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Register Account</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Do you want to register new account?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-success"
+                                        data-bs-dismiss="modal">Register</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>

@@ -149,3 +149,12 @@
         font-size: smaller;
     }
 }
+
+/*validate*/
+a, .toggle-pass {
+  color: #000;
+}
+
+a, .toggle-pass:hover {
+  background-color: #f4f5f8;
+}
