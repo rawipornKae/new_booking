@@ -4,12 +4,17 @@
 }
 
 .img-logo {
-  padding-top: 5px;
-  padding-left: 20px;
+  padding: 25px 30px;
+  padding-top: 12px;
   width: 150px;
 }
 
-.dropdown-content {
+.img-user {
+  width: 23px;
+  margin-right: 10px;
+}
+
+/* .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -37,20 +42,52 @@
 
 .dropdown {
   float: right;
+} */
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  margin-top: 75px;
+}
+
+.dropdown {
+  float: right;
+}
+
+.dropdown-content .txt:hover {
+  background-color: #ddd;
+}
+
+.dropdown-content .txt {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: medium;
+}
+/*display in this action is fault*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
 .topnav {
   position: sticky;
   top: 0;
-  overflow: hidden;
   background-color: #f4f5f8;
 }
 
 .topnav .profile {
   width: 250px;
+  height: auto;
 }
 
-.topnav a, .dropdown .dropbtn {
+.topnav a {
   float: right;
   border: none;
   outline: none;
@@ -62,7 +99,22 @@
   text-decoration: none;
   font-size: medium;
   margin: 0;
-  background-color: inherit;
+  background-color: #f4f5f8;
+}
+
+.dropdown .dropbtn {
+  float: right;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  display: block;
+  color: #595757;
+  text-align: center;
+  padding: 25px 30px;
+  text-decoration: none;
+  font-size: medium;
+  margin: 0;
+  background-color: #f4f5f8;
 }
 
 .topnav .active, a:hover, .dropdown:hover .dropbtn {
@@ -71,8 +123,8 @@
 }
 
 .topnav .bg {
-  background-color: #f39800;
-  color: white;
+  color: black;
+  background-color: #d8d8e0;
 }
 
 .topnav .bg:hover {

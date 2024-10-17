@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.img-logo {
+  padding-bottom: 5px;
+  width: 150px;
+  margin-right: 50px;
+}
+
+.container-fluid {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.clr {
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  font-size: large;
+}
+
+.lg-user {
+  width: 35px;
+  height: 35px;
+  margin-right: 5px;
+}
+
+.clr:hover {
+  background-color: #f39800;
+}
+
+.nav-link .txt {
+  font-size: large;
+  color: #f39800;
+}
+
+.header-login {
+  width: 400px;
+  font-size: 50px;
+  font-weight: 800;
+  margin-left: 20px;
+  margin-top: 20px;
+  background: linear-gradient(to right, #f39800, #85cdfe);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+@media only screen and (max-width: 400px) {
+  .header-login {
+    font-size: 40px;
+  }
+}
+
+.user {
+    border-left: 1px solid #f39800;
+}
+
+/*card body*/
+.card {
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .card {
+    margin: 30px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .card {
+    margin: 10px;
+    font-size: smaller;
+  }
+}
