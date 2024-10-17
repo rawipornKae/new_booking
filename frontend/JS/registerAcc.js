@@ -38,9 +38,9 @@ function password_show_hide() {
 }
 
 function password_show_hide2() {
-    var x = document.getElementById("password");
-    var show_eye = document.getElementById("show_eye");
-    var hide_eye = document.getElementById("hide_eye");
+    var x = document.getElementById("password2");
+    var show_eye = document.getElementById("show_eye2");
+    var hide_eye = document.getElementById("hide_eye2");
     hide_eye.classList.remove("d-none");
     if (x.type === "password") {
       x.type = "text";

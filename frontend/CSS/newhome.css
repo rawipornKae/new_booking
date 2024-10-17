@@ -29,7 +29,7 @@
 }
 
 .clr:hover {
-  background-color: #f39800;
+  text-decoration: underline;
 }
 
 .nav-link .txt {
@@ -55,7 +55,17 @@
 }
 
 .user {
-    border-left: 1px solid #f39800;
+  border-left: 1px solid #f39800;
+}
+
+.icons {
+  display: none;
+}
+
+@media only screen and (max-width: 1090px) {
+  .nav-link .user {
+    display: none;
+  }
 }
 
 /*card body*/
