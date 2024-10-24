@@ -36,23 +36,6 @@ function password_show_hide() {
     hide_eye.style.display = "none";
   }
 }
-
-function password_show_hide2() {
-    var x = document.getElementById("password2");
-    var show_eye = document.getElementById("show_eye2");
-    var hide_eye = document.getElementById("hide_eye2");
-    hide_eye.classList.remove("d-none");
-    if (x.type === "password") {
-      x.type = "text";
-      show_eye.style.display = "none";
-      hide_eye.style.display = "block";
-    } else {
-      x.type = "password";
-      show_eye.style.display = "block";
-      hide_eye.style.display = "none";
-    }
-  }
-
 // $(document).ready(function() {
 //     $("#show_hide_password a").on('click', function(event) {
 //         event.preventDefault();
